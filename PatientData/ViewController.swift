@@ -93,13 +93,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //            self.activityindicator.center = self.view.center
-//            self.activityindicator.hidesWhenStopped = true
+//            self.activityindicator.hi  desWhenStopped = true
 //            self.activityindicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
 //            view.addSubview(self.activityindicator)
 //            self.activityindicator.startAnimating()
 //            UIApplication.shared.beginIgnoringInteractionEvents()
         
-        
+            var t = TimeZone(abbreviation: "")
             let URLJsonString = "http://35.189.115.23:8081/patient/profile/01111111112"
             guard let url = URL(string: URLJsonString) else {return}
             URLSession.shared.dataTask(with: url) { (data , response , error) in
